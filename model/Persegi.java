@@ -16,7 +16,20 @@ public class Persegi extends Object2D {
     }
     
     @Override 
+    public  double hitungLuas(){
+        return sisi * sisi;
+    }
+    
+    @Override 
+    public  double hitungKeliling(){
+        return sisi * sisi * sisi * sisi;
+    }
+
+    @Override 
     public String[][] getKeyValueDetails(){
-        
+        return [
+            ["Label" + getLabel()],
+            ["Sisi" + getSisi()];
+        ]
     }
 }

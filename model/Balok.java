@@ -47,6 +47,11 @@ public class Balok extends Object3D {
 
     @Override 
     public String[][] getKeyValueDetails(){
-        
+            return [
+                ["Label" + getLabel()],
+                ["Tinggi" + getTinggi()],
+                ["Lebar" + getLebar()],
+                ["Panjang" + getPanjang()];
+            ]        
     }
 }

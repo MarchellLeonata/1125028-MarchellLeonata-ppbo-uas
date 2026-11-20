@@ -16,7 +16,7 @@ public class Lingkaran extends Object2D {
     }
     
     @Override 
-    public  double hitungLuas(){
+    public double hitungLuas(){
         return 2 * 3.14 * jariJari;
     }
     
