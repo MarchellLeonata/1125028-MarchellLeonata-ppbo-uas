@@ -16,5 +16,37 @@ public class Balok extends Object3D {
         return panjang;
     }
 
-    public double
+    public void setPanjang(double panjang){
+        this.panjang = panjang;
+
+    }
+
+    public double getLebar(){
+        return lebar;
+    }
+    public void setLebar(double lebar){
+        this.lebar = lebar;
+    }
+
+    public double getTinggi(){
+        return tinggi;
+    }
+    public void setTinggi(double tinggi){
+        this.tinggi = tinggi;
+    }
+ 
+    @Override 
+    public double hitungLuasPermukaan(){
+        return 2 * panjang * lebar + panjang * tinggi + tinggi * lebar;
+    }
+
+    @Override 
+    public double hitungVolume(){
+        return panjang * lebar * tinggi;
+    }  
+
+    @Override 
+    public String[][] getKeyValueDetails(){
+        
+    }
 }
