@@ -27,6 +27,9 @@ public class Lingkaran extends Object2D {
 
     @Override 
     public String[][] getKeyValueDetails(){
-        
+        return [
+            ["label" + getLabel()],
+            ["Jari-Jari" + getJariJari()];
+        ]
     }
 }

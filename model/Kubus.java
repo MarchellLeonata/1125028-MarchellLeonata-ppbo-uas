@@ -28,7 +28,10 @@ public class Kubus extends Object3D {
 
     @Override 
     public String[][] getKeyValueDetails(){
-        
+        return [
+            ["Label" + geLabel()],
+            ["Sisi" + getSisi()];
+        ]
     }
 
 }
